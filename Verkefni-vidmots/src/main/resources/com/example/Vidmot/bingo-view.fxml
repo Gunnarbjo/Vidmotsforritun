@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Vidmot.BingoController">
+    <children>
+        <Label fx:id="fxLabel" alignment="CENTER" prefHeight="85.0" prefWidth="600.0" text="BINGÓ!!!" visible="false" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+         <font>
+            <Font name="System Bold" size="80.0" />
+         </font></Label>
+        <GridPane id="layout" fx:id="fxGrid" prefHeight="459.0" prefWidth="616.0">
+            <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+
+
+                <Button id="b1" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="b2" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="b3" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="b4" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="b5" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="i1" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="i2" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="i3" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="i4" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="i5" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="n1" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="n2" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="n3" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="n4" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="n5" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="g1" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="g2" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="g3" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="g4" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="g5" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="o1" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="o2" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="o3" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="o4" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Button id="o5" alignment="CENTER" mnemonicParsing="false" onAction="#bingoHandler" prefHeight="100.0" prefWidth="150.0" text="Button" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                    <font>
+                        <Font name="System Bold" size="20.0" />
+                    </font>
+                </Button>
+                <Label id="b" alignment="CENTER" prefHeight="100.0" prefWidth="150.0" text="B">
+                    <font>
+                        <Font name="System Bold" size="50.0" />
+                    </font>
+                </Label>
+                <Label id="i" alignment="CENTER" prefHeight="100.0" prefWidth="150.0" text="I" GridPane.columnIndex="1">
+                    <font>
+                        <Font name="System Bold" size="50.0" />
+                    </font>
+                </Label>
+                <Label id="n" alignment="CENTER" prefHeight="100.0" prefWidth="150.0" text="N" GridPane.columnIndex="2">
+                    <font>
+                        <Font name="System Bold" size="50.0" />
+                    </font>
+                </Label>
+                <Label id="g" alignment="CENTER" prefHeight="100.0" prefWidth="150.0" text="G" GridPane.columnIndex="3">
+                    <font>
+                        <Font name="System Bold" size="50.0" />
+                    </font>
+                </Label>
+                <Label id="o" alignment="CENTER" prefHeight="100.0" prefWidth="150.0" text="O" GridPane.columnIndex="4">
+                    <font>
+                        <Font name="System Bold" size="50.0" />
+                    </font>
+                </Label>
+            </children>
+        </GridPane>
+      <Label text="Label" />
+    </children>
+</VBox>

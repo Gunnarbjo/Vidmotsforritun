@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="Vhlutverk" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Vidmot.StartController">
+    <children>
+        <Button fx:id="spilari" layoutX="205.0" layoutY="227.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="64.0" text="Spilari" onAction="#spilaHandler"/>
+        <Button fx:id="stjornandi" layoutX="338.0" layoutY="227.0" mnemonicParsing="false" text="Stjornandi" />
+        <Label alignment="CENTER" layoutX="190.0" layoutY="77.0" prefHeight="82.0" prefWidth="220.0" text="Bingó">
+            <font>
+                <Font name="System Bold" size="70.0" />
+            </font>
+        </Label>
+        <Label layoutX="203.0" layoutY="286.0" text="Veljið hvaða hlutverk þið viljið gegna" />
+    </children>
+</Pane>

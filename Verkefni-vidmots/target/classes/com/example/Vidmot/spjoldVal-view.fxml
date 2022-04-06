@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<Pane fx:id="Valspj" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.Vidmot.SpjoldValController">
+    <children>
+        <Button fx:id="prufa" layoutX="108.0" layoutY="175.0" mnemonicParsing="false" text="1 spjald" />
+        <Button layoutX="258.0" layoutY="175.0" mnemonicParsing="false" text="2 spjöld" />
+        <Button layoutX="404.0" layoutY="175.0" mnemonicParsing="false" text="3 spjöld" />
+        <Label layoutX="51.0" layoutY="79.0" text="Veldu hversu mörg spjöld þú vilt fá">
+            <font>
+                <Font name="System Bold" size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="190.0" layoutY="303.0" text="And may luck be forever in your favor" />
+    </children>
+</Pane>
