@@ -1,27 +1,21 @@
 package com.example.Vidmot;
 
+import com.example.vinnsla.Stjornandi;
 import javafx.fxml.FXML;
-import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.layout.Pane;
-import javafx.stage.Stage;
+import javafx.fxml.Initializable;
+import javafx.scene.control.Label;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
-public class StjornandiController implements StjornandiControllerInterface {
-    private Scene scene;
-    private Stage stage;
+public class StjornandiController implements Initializable {
     @FXML
-    private Button stjornandi;
+    private Label byrtaKulu;
 
-    @FXML
-    private Pane stjorn;
+    private Stjornandi stjornandi;
 
-    @Override
-    public void initializeStjorn(URL url, ResourceBundle resourceBundle) {
-        scene = new Scene(stjorn);
-        stjornandi.setVisible(true);
+    public StjornandiController() {
+         stjornandi = new Stjornandi();
     }
 
     @Override
@@ -29,18 +23,7 @@ public class StjornandiController implements StjornandiControllerInterface {
 
     }
 
-    @Override
-    public void birtaStjornGlugga() {
-        Stage stage = new Stage();
-        stage.setTitle("Rúllum kúlum");
-        stage.setScene(scene);
-        stage.show();
-    }
-
-    @Override
-    public void birtaGlugga() {
-
-    }
-
-
+   /*public void byrtaKulu(ActionEvent actionEvent){
+       stjornandi.byrtaKulu(actionEvent);
+    }*/
 }

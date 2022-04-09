@@ -17,16 +17,24 @@ import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.GridPane;
+
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class BingoController implements Initializable {
 
     public Label fxLabel;
+    public Label fxLabel2;
     private Bingospjald spjald;
 
     @FXML
     private GridPane fxGrid;
+    @FXML
+    public GridPane fxGrid2;
+    @FXML
+    public GridPane fxGrid3;
+
 
     /**
      * Setur tölur á takkana í Bingó
@@ -47,8 +55,33 @@ public class BingoController implements Initializable {
                 index++;
             }
         }
-    }
+        if(fxGrid2 == null) return;
+        spjald = new Bingospjald();
+        ObservableList<Node> children2 = fxGrid2.getChildren();
+        int[][] b2Spjald = spjald.getSpjald();
+        index = 0;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                Button b = (Button) children2.get(index);
+                b.setText(String.valueOf(b2Spjald[j][i]));
+                index++;
+            }
+        }
+        if(fxGrid3 == null) return;
+        spjald = new Bingospjald();
+        ObservableList<Node> children3 = fxGrid3.getChildren();
+        int[][] b3Spjald = spjald.getSpjald();
+        index = 0;
+        for (int i = 0; i < 5; i++) {
+            for (int j = 0; j < 5; j++) {
+                Button b = (Button) children3.get(index);
+                b.setText(String.valueOf(b3Spjald[j][i]));
+                index++;
+            }
+        }
 
+
+    }
     /**
      *Skoðar virkni í spjaldinu og
      * Breytir um bakgrunn onClick,
@@ -64,7 +97,7 @@ public class BingoController implements Initializable {
         b.setDisable(true);
         fxGrid.requestFocus();
 
-        Integer row = GridPane.getRowIndex(b)-1;
+        int row = GridPane.getRowIndex(b)-1;
         Integer column = GridPane.getColumnIndex(b);
         //column gildi fyrir B er alltaf null
         if(column == null) column = 0;
@@ -73,7 +106,17 @@ public class BingoController implements Initializable {
         if (spjald.erBingo()) {
             fxLabel.setManaged(true);
             fxLabel.setVisible(true);
+
         }
 
+    }
+
+    public void switchToSceneStart(ActionEvent actionEvent) throws IOException {
+        SceneController sc = new SceneController();
+        sc.switchToSceneStart(actionEvent);
+    }
+    public void switchToSceneSpjoldVal(ActionEvent actionEvent) throws IOException {
+        SceneController sc = new SceneController();
+        sc.switchToSceneSpjoldVal(actionEvent);
     }
 }
